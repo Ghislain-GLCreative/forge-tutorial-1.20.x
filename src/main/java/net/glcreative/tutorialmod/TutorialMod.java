@@ -1,6 +1,7 @@
 package net.glcreative.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.glcreative.tutorialmod.block.ModBlocks;
 import net.glcreative.tutorialmod.item.ModCreativeModTabs;
 import net.glcreative.tutorialmod.item.ModItems;
 import net.minecraft.client.Minecraft;
@@ -47,6 +48,7 @@ public class TutorialMod
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
